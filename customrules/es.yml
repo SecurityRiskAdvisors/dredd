@@ -1,0 +1,31 @@
+---
+name: Scheduled Task
+backend: elasticsearch
+rule: |
+  {
+    "query": {
+      "constant_score": {
+        "filter": {
+          "bool": {
+            "must": [
+              {
+                "match_phrase": {
+                  "winlog.channel": "Microsoft-Windows-Sysmon/Operational"
+                }
+              },
+              {
+                "match_phrase": {
+                  "winlog.event_id": "1"
+                }
+              },
+              {
+                "wildcard": {
+                  "winlog.event_data.Image.keyword": "*\\\\schtasks.exe"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,14 @@
+---
+name: Word + cmd
+backend: splunk
+metadata:
+  foo: bar
+rule: |
+  (index="windows" ParentImage="*\\winword.exe" Image="*\\cmd.exe")
+---
+name: Word + PowerShell
+backend: splunk
+metadata:
+  foo: baz
+rule: |
+  (index="windows" ParentImage="*\\winword.exe" Image="*\\powershell.exe")

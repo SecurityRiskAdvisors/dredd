@@ -4,7 +4,7 @@ Dredd primarily supports the process of evaluating [Sigma](https://github.com/Ne
 
 Dredd also supports the evaluation of IDS rules against packet captures.
 
-See the release blog post for more information: **link**
+See the release blog post for more information: https://sra.io/blog/automated-detection-rule-analysis-with-dredd/
 
 ## Supported Backends
 

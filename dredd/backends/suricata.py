@@ -13,7 +13,7 @@ class ExecRunException(Exception):
 
 
 class DreddSuricata(DreddBackend):
-    def __init__(self, rule_directory: str, archive_directory: str, image: str = "2xxesra/suricata"):
+    def __init__(self, rule_directory: str, archive_directory: str, image: str = "securityriskadvisors/suricata"):
         super().__init__(rule_directory=rule_directory, archive_directory=archive_directory, image=image)
         self.mergedrulefile = ""
         self.ct_mounts = []

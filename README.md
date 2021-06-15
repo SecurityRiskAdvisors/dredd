@@ -189,7 +189,7 @@ Example output
 
 Suricata rule analysis uses a custom container. 
 The Dockerfile can be found [here](dockerfiles/suricata.dockerfile).
-The Docker Hub page can be found [here](https://hub.docker.com/r/2xxesra/suricata).
+The Docker Hub page can be found [here](https://hub.docker.com/r/securityriskadvisors/suricata).
 
 ## Custom Rules (Sigma only)
 

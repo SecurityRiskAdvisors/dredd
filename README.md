@@ -130,6 +130,10 @@ Skipped and unsupported are both top-level keys in the results dict.
 Skipped rules are rules that are in-compatible with the backend. For example: supplying a Splunk rule to an ES backed).
 Unsupported rules are rules that use features not supported by the backend. For example: using "near" with an Elasticsearch backend.
 
+**Note: Log archives**
+
+This tool assumes imported log data is from a trusted source. Do not process untrusted data.
+
 ### Suricata
 
 ```
